@@ -36,6 +36,8 @@ gem 'bcrypt', '~> 3.1.7'
 
 # User bootstrap-sass as css framework
 gem 'bootstrap-sass'
+# User faker to generate sample data
+gem 'faker'
 
 group :development, :test do
   gem 'sqlite3'
