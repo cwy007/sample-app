@@ -34,10 +34,13 @@ gem 'bcrypt', '~> 3.1.7'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# User bootstrap-sass as css framework
+# Use bootstrap-sass as css framework
 gem 'bootstrap-sass'
-# User faker to generate sample data
+# Use faker to generate sample data
 gem 'faker'
+# Use will_paginate to implement pagination
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 
 group :development, :test do
   gem 'sqlite3'
