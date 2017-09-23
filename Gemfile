@@ -41,6 +41,8 @@ gem 'faker'
 # Use will_paginate to implement pagination
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
+# Use figaro manage serect key 
+gem 'figaro'
 
 group :development, :test do
   gem 'sqlite3'
