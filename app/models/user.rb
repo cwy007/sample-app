@@ -58,9 +58,9 @@ class User < ApplicationRecord
   end
 
   def sent_password_reset_email
-    UserMailer.password_reset(self).now
+    UserMailer.password_reset(self).deliver_now
   end
-  
+
   private
 
     # Converts email to all lower-case.
