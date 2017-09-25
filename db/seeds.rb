@@ -16,8 +16,7 @@ User.create!(name: "Example User",
              activated_at: Time.zone.now)
 
 puts "=========================================================================="
-puts "create 1 users(email: example@railstutorial.org, password: 123456\r
-                    email: chanweiyan007@gmail.com, password: 123456)"
+puts "create 1 users(email: example@railstutorial.org, password: 123456)"
 
 99.times do |n|
   name = Faker::Name.name
@@ -33,3 +32,11 @@ end
 puts "=========================================================================="
 puts "create another 99 users"
 puts "User.count = #{User.count}"
+
+users = User.order(:created_at).take(6)
+50.times do
+  content = Faker::Lorem.sentence(5)
+  users.each { |user| user.microposts.create!(content: content) }
+end
+puts "=========================================================================="
+puts "create 50 microposts for each of the first 6 users"
