@@ -41,8 +41,13 @@ gem 'faker'
 # Use will_paginate to implement pagination
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
-# Use figaro manage serect key 
+# Use figaro manage serect key
 gem 'figaro'
+# Image uploader
+gem 'carrierwave'
+# Resize image
+gem 'mini_magick'
+gem 'fog'
 
 group :development, :test do
   gem 'sqlite3'
