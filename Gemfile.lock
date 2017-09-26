@@ -45,6 +45,11 @@ GEM
     arel (8.0.0)
     autoprefixer-rails (7.1.2.4)
       execjs
+    awesome_print (1.7.0)
+    awesome_rails_console (0.4.0)
+      awesome_print
+      pry-rails
+      railties
     bcrypt (3.1.11)
     bindex (0.5.0)
     bootstrap-sass (3.3.7)
@@ -67,6 +72,7 @@ GEM
       mime-types (>= 1.16)
     childprocess (0.7.1)
       ffi (~> 1.0, >= 1.0.11)
+    choice (0.2.0)
     coderay (1.1.2)
     coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
@@ -273,6 +279,8 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    pry-rails (0.3.6)
+      pry (>= 0.10.4)
     public_suffix (3.0.0)
     puma (3.10.0)
     rack (2.0.3)
@@ -297,6 +305,11 @@ GEM
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
+    rails-erd (1.5.2)
+      activerecord (>= 3.2)
+      activesupport (>= 3.2)
+      choice (~> 0.2.0)
+      ruby-graphviz (~> 1.2)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
     railties (5.1.4)
@@ -314,6 +327,7 @@ GEM
       json (>= 1.8)
       nokogiri (~> 1.5)
       trollop (~> 2.1)
+    ruby-graphviz (1.2.3)
     ruby-progressbar (1.8.3)
     ruby_dep (1.5.0)
     rubyzip (1.2.1)
@@ -374,6 +388,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  awesome_rails_console
   bcrypt (~> 3.1.7)
   bootstrap-sass
   bootstrap-will_paginate
@@ -395,6 +410,7 @@ DEPENDENCIES
   puma (~> 3.7)
   rails (~> 5.1.4)
   rails-controller-testing
+  rails-erd
   sass-rails (~> 5.0)
   selenium-webdriver
   spring

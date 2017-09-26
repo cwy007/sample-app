@@ -48,6 +48,8 @@ gem 'carrierwave'
 # Resize image
 gem 'mini_magick'
 gem 'fog'
+gem 'awesome_rails_console'
+gem 'rails-erd'
 
 group :development, :test do
   gem 'sqlite3'
