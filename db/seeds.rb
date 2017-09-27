@@ -40,3 +40,11 @@ users = User.order(:created_at).take(6)
 end
 puts "=========================================================================="
 puts "create 50 microposts for each of the first 6 users"
+
+# Following relationships
+users = User.all
+user = users.first
+following = users[2..50]
+followers = users[3..40]
+following.each { |followed| user.follow(followed) }
+followers.each { |follower| follower.follow(user) }
