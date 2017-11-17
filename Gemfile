@@ -41,6 +41,9 @@ gem 'faker'
 # Use will_paginate to implement pagination
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
+
+gem 'carrierwave-qiniu', '~> 1.1.5'
+gem 'qiniu', '>= 6.9.0'
 # Use figaro manage serect key
 gem 'figaro'
 # Image uploader
